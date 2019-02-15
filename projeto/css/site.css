@@ -27,15 +27,6 @@ p{
     margin: 20px 0;
 }
 
-.citacoes{
-    background-color: #D9E5E3;
-    padding: 16px;
-    margin: 20px 40px;
-    border: 10px solid #C2CCCA;
-    width: 250px;
-    box-sizing: border-box;
-}
-
 .barra-navegacao{
     background-color: #3C1D3D;
     color: #F2FFFC;
@@ -46,13 +37,9 @@ ul{
     list-style-type: none;/*remove marcação da lista (bullets)*/
 }
 
-#rodape{
-    background-color: #000;
-    color: #F2FFFC;
-}
-
 nav a{
     color: #F2FFFC;
+    text-transform: lowercase;
 }
 
 main a{
@@ -70,7 +57,7 @@ main a{
 }
 
 main div{
-    width: 720px;
+    /* width: 720px; */
     padding: 30px 0; 
 }
 
@@ -83,25 +70,75 @@ em{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 30px;    
+}
+
+.subtitulo-texto {
+    clear: both;
 }
 
 .icones-sociais li{
     display: inline-block;
 }
 
-article{
-    padding-bottom: 30px;
-    border-bottom: 1px solid #CCC;
-    margin-bottom: 20px;
-}
-
-.leia-mais{
-    padding: 8px;
-    margin: 16px;
+.icones-sociais a{
+    width: 40px;
+    height: 40px;
     display: block;
-    font-size: 24px;
-    text-align: center;
-    background-color: #E6E7E8;
+    color: transparent;/* text-indent: -99999px; */
 }
 
+.github{
+    background-image: url(../img/github.png); 
+}
+
+.twitter{
+    background-image: url(../img/twitter.png); 
+}
+
+.linkedin{
+    background-image: url(../img/linkedin.png); 
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.rodape-pagina{
+    clear: both;
+    background-color: #000;
+    color: #F2FFFC;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main{
+    float: left;
+    width: 80%;
+    padding-bottom: 80px;
+}
+
+aside{
+    box-sizing: border-box;
+    /* clear: right; */
+    position: relative;
+    top: 300px;
+    width: 15%;
+}
+
+.minha-foto, .barra-navegacao{
+    float:right;
+    box-sizing: border-box;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.minha-foto{
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
